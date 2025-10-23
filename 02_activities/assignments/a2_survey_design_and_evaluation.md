@@ -25,7 +25,7 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 2. Sample size
 3. Target population
 4. Sampling frame
-5. Survey mode(s) 
+5. Survey mode(s)
 6. Timeline
 7. Response rate
 8. Weights
@@ -38,32 +38,60 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 # Your Changes
 
-## Part A - Survey Design: 
+## Part A - Survey Design:
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
 write your answer here...
+
+The purpose of this survey is to identify the drivers of high turnover among entry- and lower-level employees at A Large Tech Company, and to gather actionaable suggestions for reducing turnover and improving employee statisfaction.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
 write your answer here...
+
+Target population: All entry- and lower-level employess across all  departments and those employess who recently left (last 12 months).
+
+Sampling frame: HR database to get current employess filtered by entry- and lower-level positions and past employess who recently left.
+
+Sampling units: Indiviual employees.
+
+Observational units: Individual employees.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. Overall, how satisfied are/were you with your job at this company?
+Options: Very dissatisfied | Dissatisfied | Neutral | Statisfied | Very statisfied
+
+2. How supported do/did you feel by your manager in your role?
+Options: Not at all supported | Somewhat supported | Neutral | Well supported | Very well supported
+
+3. Do/did you feel you have clear opportunities for career advancement here?
+Options: Yes | No | Not sure
+
+4. How likely are you to still be working here in 6 months?
+Options: Very unlikely | Unlikely | Likey | Very likely | Not sure
+
+5. How do/did you feel about  the compensation and benefits at the company?
+Options: Under market | Up to market | Above market | Not sure
+
+6. What are the most important areas where having high satisfaction would encourage you (or would have encouraged you) to stay? (select four)
+Options:
+- Pay and benefits
+- Opportunities for promotion
+- Quality of supervision
+- Manager support
+- Workload and work-life balance
+- Onboarding and training
+- Recognition for good work
+- Clarity of role and responsibilities
+- Team culture
+- Other (please specify)
+
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +99,33 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+Note: I refered to the following resource to find answers for the questions in this section: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
+
+1. Sample type: This is a two-stage stratified sampling. Stratification was done on the basis of geopgrahical areas including several Census Metropolitan Areas (CMAs) either individually or grouped, resulting in 27 strata in total. The sampling used a two-stage design. In the first stage, the sampling units are groups of telephone numbers associated with households. In the final stage the units are individuals within the identified household. One eligible individual per household is randomly selected to be interviewed.
+
+2. Sample size: Field sample of ~50000 units across Canada was used. Approximately 40000 invitation letters to the questionnaire were sent to selected housholds. (~24000 completions were expected, but the actual completions were 16149.)
+
+3. Target population: All persons aged 15 years and above living in the ten provinces of Canada, excluding full-time institutional residents.
+
+4. Sampling frame: Landline and cellular telephone numbers from Census and other administrative sources combined with Statistics Canada's dwelling frame to obtain the sampling frame whose records are groups of one or more telephone numbers associated with a residential address.
+
+5. Survey mode(s): Data was collected directly from respondents either through an electronic questionnaire or through computer assisted telephone interviewing. Respondents can chose to do the survey in either English or French. Proxy reporting was not allowed.
+
+6. Timeline: Data was collected from 04-Sep-2018 to 28-Dec-2018, and the reference period was the preceding 12 months.
+
+7. Response rate: The overall response rate was 41.9%
+
+8. Weights: A person level weight WGHT_PER is used to calcualte popluation estimates.
+
+9. Data processing: Processing used Statistics Canada’s standardized processing environment with automated and manual edits. Compuster Assisted Telephonic Interview (CATI) system enforced valid ranges, flow edits and immediate on-screen checks.
+
+10. Cleaning, imputation, etc: Nearly all imputations were done by selecting the "nearest" donor record which was selected after scoring each donor based on matching similar or identical characteristics with the target (or recepient) record. In cases where this could not be done, then mean imputation among pool of donors was used. Imputation was done in multiple steps: income variables, formal volunteering variables, informal volunterring varaibles, donation variables, solicitation methods, etc. Personal and family income information was not directly asked in the survey, but was obtained by linking to tax data for respondents who consented to linking (~82%), and for the rest this was imputed.
+
+11. Sources of error: The data is subject to sampling error, and reslutantly the estimates have sampling variablity. To account for this variablity properly, bootstrap method was used. Additionally, there are non-sampling errors such as imperfect coverage, non-response, response errors, processing errors, etc.
+
+12. Limitations, known biases, etc: Coverage bias due to exclusion of certain households (i.e., those without telephone numbers or those with telephone numbers but not covered by the sampling frame) if they differ from the target population. The overall response rate of ~41.9% is a limitation and raises a concern for non-response bias.
+
+13. Link to documentation and any additional sources used: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
 ```
 
 ## Rubric
@@ -93,9 +147,9 @@ write your answer here
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-2`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-2`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via the help channel in Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
